@@ -1,0 +1,3 @@
+- name: Create missing directory
+  run: mkdir -p /github/workspace/docs
+  

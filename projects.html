@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio - Projects</title>
+    <link rel="icon" type="image/png" href="images/PW.jpeg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@300;400;700&family=Pacifico&display=swap" rel="stylesheet">
+
+
+    <style>
+        :root {
+            --primary-color: #5888e7;
+            --secondary-color: #61dafb;
+            --background-color: #ffffff;
+            --text-color: #333333;
+            --dark-background: #282c34;
+            --light-text: #e3e3e3;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: var(--light-text);
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-family: 'Pacifico', cursive;
+            font-size: 2.5em;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: var(--light-text);
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--secondary-color);
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 40px auto;
+            position: relative;
+        }
+
+        .home-button {
+            display: inline-block;
+            margin: 20px 0;
+            padding: 12px 25px;
+            background-color: var(--secondary-color);
+            color: var(--dark-background);
+            text-decoration: none;
+            border-radius: 50px;
+            transition: background-color 0.3s, transform 0.3s;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .home-button:hover {
+            background-color: #21a1f1;
+            transform: translateY(-2px);
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .project {
+            background-color: var(--light-text);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .project:hover {
+            transform: translateY(-5px);
+        }
+
+        .project img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .project h2 {
+            margin-top: 15px;
+            font-size: 1.5em;
+        }
+
+        .project p {
+            margin: 10px 0;
+        }
+
+        .project a {
+            display: inline-block;
+            margin-top: 10px;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: var(--dark-background);
+            color: var(--secondary-color);
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>My Projects</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="certifications.html">Certifications</a>
+            <a href="skills.html">Skills</a>
+        </nav>
+    </header>
+    <main class="container">
+        <div class="projects">
+            <div class="project">
+                <h2>Project 1</h2>
+                <p>Description of project 1.</p>
+                <img src="images/project1.jpg" alt="Project 1">
+                <a href="https://github.com/yourusername/project1" target="_blank">GitHub Link</a>
+            </div>
+            <div class="project">
+                <img src="images/project2.jpg" alt="Project 2">
+                <h2>Project 2</h2>
+                <p>Description of project 2.</p>
+                <a href="https://github.com/yourusername/project2" target="_blank">GitHub Link</a>
+            </div>
+            <div class="project">
+                <img src="images/project3.jpg" alt="Project 3">
+                <h2>Project 3</h2>
+                <p>Description of project 3.</p>
+                <a href="https://github.com/yourusername/project3" target="_blank">GitHub Link</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 My Portfolio</p>
+    </footer>
+</body>
+
+</html>
